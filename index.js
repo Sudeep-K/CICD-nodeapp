@@ -121,7 +121,6 @@ const cities = [
 
 const main = async () => {
 
-
   for (let i = 0; i < cities.length; i++) {
     const city = cities[i];
     const cityParts = city.split(' ').length > 1 ? city.split(' ')[1] : city;
@@ -151,7 +150,7 @@ app.get('/locations', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+  console.log(`Beermapping server running at http://localhost:${port}/`);
 });
 
 //main();
