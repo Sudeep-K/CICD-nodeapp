@@ -1,6 +1,7 @@
 services:
   nodeapp:
     build: .
+    image: ${DOCKER_USERNAME}/beermapping:latest
     ports:
       - "3000:3000"
     container_name: beermapping-nodeapp
