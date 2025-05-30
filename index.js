@@ -136,6 +136,10 @@ app.get('/test-cicd', (req, res) => {
   res.json({'message': 'Congratulation the reload function works like a charm!😁'});
 });
 
+app.get('/test-watchtower', (req, res) => {
+  res.json({'message': '🤖Congratulation the deployment script works like a charm!🥳🙌'});
+});
+
 app.get('/locations/:place', (req, res) => {
   const place = req.params.place;
   const city = place.split(' ').length > 1 ?  place.split(' ')[1] : place;
